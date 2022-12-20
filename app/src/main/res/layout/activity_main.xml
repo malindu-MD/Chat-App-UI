@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context=".MainActivity">
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Chats"
+         android:textSize="36sp"
+         android:textStyle="bold"
+         android:textColor="#121212"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginTop="25dp"
+         android:layout_marginLeft="20dp"
+         android:id="@+id/chat"/>
+    <SearchView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="1dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Messages"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chat"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        android:background="@drawable/borderone"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/recent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active"
+        android:layout_toRightOf="@id/recent"
+        android:layout_below="@id/chat"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/bordertwo"
+        android:layout_marginLeft="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#121212"
+        android:layout_below="@id/recent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:background="#ffffff"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginBottom="2dp">
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="#F4F9F9"
+                      >
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:background="#000000"
+                          android:src="@drawable/manone"
+                          android:layout_marginLeft="20dp"
+                          android:layout_alignParentLeft="true"
+                          android:layout_margin="5dp"
+                          android:id="@+id/one"/>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Imal Akalanka"
+                          android:textSize="22sp"
+                          android:textStyle="bold"
+                          android:textColor="#000000"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginTop="10dp"
+                          android:layout_toRightOf="@id/one"
+                          android:id="@+id/imal"
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="5m"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginRight="20dp"
+                          android:textSize="16sp"/>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Where Are You now?"
+                          android:layout_toRightOf="@id/one"
+                          android:layout_below="@id/imal"
+                          android:textSize="14sp"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginTop="3dp"/>
+
+                  </RelativeLayout>
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:background="#ffffff"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginBottom="2dp">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:background="#FFF5EB"
+                     android:layout_height="wrap_content">
+
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="#000000"
+                         android:layout_alignParentLeft="true"
+                         android:src="@drawable/mantwo"
+                         android:layout_margin="5dp"
+                         android:id="@+id/two"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Dulsara Methushan"
+                         android:textSize="22sp"
+                         android:textStyle="bold"
+                         android:textColor="#000000"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_toRightOf="@id/two"
+                         android:id="@+id/dulsara"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="9m"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="20dp"
+                         android:textSize="16sp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="I am fine"
+                         android:layout_toRightOf="@id/two"
+                         android:layout_below="@id/dulsara"
+                         android:textSize="14sp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="3dp"/>
+
+
+
+                 </RelativeLayout>
+
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:background="#ffffff"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginBottom="2dp">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:background="#F4F9F9"
+                     android:layout_height="wrap_content">
+
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="#000000"
+                         android:layout_alignParentLeft="true"
+                         android:src="@drawable/manthree"
+                         android:layout_margin="5dp"
+                         android:id="@+id/three"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Shiran Akther"
+                         android:textSize="22sp"
+                         android:textStyle="bold"
+                         android:textColor="#000000"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_toRightOf="@id/three"
+                         android:id="@+id/shiran"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="15m"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="20dp"
+                         android:textSize="16sp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="What are you doing now?"
+                         android:layout_toRightOf="@id/three"
+                         android:layout_below="@id/shiran"
+                         android:textSize="14sp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="3dp"/>
+
+
+
+                 </RelativeLayout>
+
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:background="#ffffff"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginBottom="2dp">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:background="#FFF5EB"
+                     android:layout_height="wrap_content">
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="#000000"
+                         android:src="@drawable/manfour"
+                         android:layout_alignParentLeft="true"
+                         android:layout_margin="5dp"
+                         android:id="@+id/four"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Imesh Tharusha"
+                         android:textSize="22sp"
+                         android:textStyle="bold"
+                         android:textColor="#000000"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_toRightOf="@id/four"
+                         android:id="@+id/imesh"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="1h"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="20dp"
+                         android:textSize="16sp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="!2000/="
+                         android:layout_toRightOf="@id/four"
+                         android:layout_below="@id/imesh"
+                         android:textSize="14sp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="3dp"/>
+
+
+
+                 </RelativeLayout>
+
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:background="#ffffff"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginBottom="2dp">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:background="#F4F9F9"
+                     android:layout_height="wrap_content">
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="#000000"
+                         android:src="@drawable/five"
+                         android:layout_alignParentLeft="true"
+                         android:layout_margin="5dp"
+                         android:id="@+id/five"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Charith Soori"
+                         android:textSize="22sp"
+                         android:textStyle="bold"
+                         android:textColor="#000000"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_toRightOf="@id/five"
+                         android:id="@+id/charith"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="1d"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="20dp"
+                         android:textSize="16sp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Ok Bye"
+                         android:layout_toRightOf="@id/five"
+                         android:layout_below="@id/charith"
+                         android:textSize="14sp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="3dp"/>
+
+
+
+
+                 </RelativeLayout>
+
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:background="#ffffff"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginBottom="0dp">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:background="#FFF5EB"
+                     android:layout_height="wrap_content">
+
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="#000000"
+                         android:src="@drawable/six"
+                         android:layout_alignParentLeft="true"
+                         android:layout_margin="5dp"
+                         android:id="@+id/six"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Malith Dilshan"
+                         android:textSize="22sp"
+                         android:textStyle="bold"
+                         android:textColor="#000000"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_toRightOf="@id/six"
+                         android:id="@+id/malith"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="2d"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="20dp"
+                         android:textSize="16sp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="I was creating a new app"
+                         android:layout_toRightOf="@id/six"
+                         android:layout_below="@id/malith"
+                         android:textSize="14sp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="3dp"/>
+
+
+
+                 </RelativeLayout>
+
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="2"
+                 android:background="#ffffff"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1">
+                     <ImageButton
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/chat"
+                         android:background="#ffffff"/>
+
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1">
+
+                     <ImageButton
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="#ffffff"
+                         android:src="@drawable/group" />
+
+
+
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1">
+
+                     <ImageButton
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/phone"
+                         android:background="#ffffff"/>
+
+
+
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1">
+                     <ImageButton
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/menu"
+                         android:background="#ffffff"/>
+
+
+
+
+                 </LinearLayout>
+
+
+
+
+
+             </LinearLayout>
+
+
+
+
+         </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
