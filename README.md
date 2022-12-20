@@ -1,3 +1,3 @@
 # Chat-App-UI
-<img align="center" alt="Coding"  src="./readmeRes/ss.png">
+<img align="center" alt="Coding"  src="./readme/ss.png">
 
